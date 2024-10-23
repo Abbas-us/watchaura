@@ -1,0 +1,119 @@
+/* Main contact page container */
+.contactPage {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contact container */
+.contact-Cont {
+    max-width: 1000px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 30px;
+}
+
+/* Contact information box */
+.cont-box {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Contact details section */
+.contact-us {
+    color: #333;
+}
+
+#ct-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.ct-us {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.ct-us p {
+    margin: 5px 0;
+}
+
+.ct-us i {
+    color: #3498db;
+    margin-right: 10px;
+}
+
+/* Form container */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form fields styling */
+.fields, .fields2 {
+    margin-bottom: 20px;
+}
+
+.fields label, .fields2 label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.fields input, .fields2 textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f1f1f1;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.fields input:focus, .fields2 textarea:focus {
+    border-color: #3498db;
+}
+
+/* Textarea styling */
+.fields2 textarea {
+    resize: none;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .contact-Cont {
+        flex-direction: column;
+    }
+
+    .cont-box {
+        width: 100%;
+    }
+}

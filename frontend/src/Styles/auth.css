@@ -1,0 +1,133 @@
+/* auth.css */
+:root {
+    --primary-color: #007bff; /* Bootstrap primary blue */
+    --secondary-color: rgba(248, 249, 250, 0.8); /* Light grey background */
+    --error-color: lightcoral;
+    --success-color: #28a745; /* Success green */
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --border-color: rgb(180, 178, 178);
+    --input-bg-color: #ffffff;
+    --input-focus-bg: #f0f8ff; /* Alice Blue */
+    --button-bg: black;
+    --button-hover-bg: #555; /* Darker grey */
+}
+
+/* Reset and universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centering the authentication container with background image */
+#authDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190621/ourmid/pngtree-quartz-watch-promotion-season-atmospheric-black-banner-image_184423.jpg'); /* Add your background image path here */
+    background-size: cover; /* Cover the entire div */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+}
+
+/* Styling the authentication container */
+#auth-container {
+    border-radius: 8px; /* Increased border-radius for a softer look */
+    box-shadow: 0 4px 8px var(--shadow-color), inset 0 2px 4px var(--shadow-color);
+    padding: 30px 40px; /* More padding for a spacious layout */
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with some transparency */
+}
+
+/* Form styling */
+form {
+    font-family: 'Cambria', 'Cochin', Georgia, 'Times New Roman', serif;
+    margin-top: 20px;
+}
+
+/* Header styling */
+h2 {
+    text-align: center; /* Center the header */
+    color: rgb(4, 4, 4);
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Auth fields styling */
+#auth-fields {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input fields styling */
+input {
+    padding: 10px; /* Increased padding for better touch target */
+    margin: 5px 0;
+    font-family: inherit;
+    font-size: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s, background-color 0.3s; /* Smooth transition */
+    background-color: var(--input-bg-color);
+}
+
+input:focus {
+    border-color: var(--primary-color); /* Change border color on focus */
+    background-color: var(--input-focus-bg); /* Change background color on focus */
+    outline: none; /* Remove outline */
+}
+
+/* Label styling */
+label {
+    font-weight: 600;
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+/* Error message styling */
+.errMsg {
+    color: red;
+    padding: 5px;
+    background-color: var(--error-color);
+    border-radius: 4px;
+    margin: 5px 0; /* Space above and below error messages */
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: var(--button-bg);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.3s; /* Add transition for hover effect */
+}
+
+input[type="submit"]:hover {
+    background-color: var(--button-hover-bg);
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Last child styling for additional messages */
+#auth-fields:last-child {
+    p:last-child {
+        padding: 5px;
+        margin: 10px 0;
+        text-align: center; /* Center the last message */
+        color: var(--success-color); /* Change color to indicate success */
+        font-weight: bold; /* Make it bold */
+    }
+}
+
+/* Additional error message styling */
+.err1Msg {
+    color: red;
+    padding: 5px;
+    background-color: var(--error-color);
+    border-radius: 4px;
+    margin: 5px 0;
+}
